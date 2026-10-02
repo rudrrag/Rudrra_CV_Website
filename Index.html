@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
 
+    <!-- CSS and image links-->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax
-    /libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
 </head>
 <body>
     
@@ -100,15 +104,70 @@
 
         <div class="projects-grid">
             <div class="project-card">
-                
+                <img src="blockchain.jpg" alt="">
+                <h3>Blockchain Project</h3>
+                <p>Built a blockchain from scratch that registers and validates transactions submitted from multiple sources.
+                Implemented proof-of-work to secure block creation and prevent tampering with the chain.
+                Applied cryptographic hashing to link blocks and preserve the integrity of the chain.
+                Developed a basic consensus mechanism so all participants agree on one valid chain.</p>
+                <div class="btn-group">
+                    <div class="btn">Live Demo</div>
+                    <div class="btn">Github Repo</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="neural_network.jpg" alt="">
+                <h3>Neural Networks Project</h3>
+                <p>Building a neural network from first principles in Python without high-level machine learning frameworks.
+                    Implementing forward propagation, backpropagation and gradient-based learning to understand how networks train.</p>
+
+
+                <div class="btn-group">
+                    <div class="btn">Live Demo</div>
+                    <div class="btn">Github Repo</div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!--Contact section-->
+    <section class="contact" id="contact">
+        <div class="input-box">
+            <h2 class="contact-title">Contact Me</h2>
+            <div class="input">
+                <input type="text" placeholder="example@email.com">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
 
+            <div class="btn">Submit</div>
+        </div>
+    </section>
 
+    <footer>
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
 
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
 
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contacts</a>
+            </li>
+        </ul>
+
+        <p class="copyright">© All Rights Reserved | Rudrra Gohil</p>
+
+    </footer>
+
+    <!--JavaScript link-->
     <script src="script.js"></script>
 </body>
 </html>
