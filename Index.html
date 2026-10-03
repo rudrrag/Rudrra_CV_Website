@@ -36,13 +36,14 @@
 
         <i class="fa-solid fa-bars" id="menu-icon"></i> 
 
-        <button class="visit-btn">Visit Github</button>
+        <a href="https://github.com/rudrrag"
+        target="_blank" rel="noopener norefferer" class="visit-btn">Visit GitHub</a>
     </header>
 
     <!--About section-->
     <section id="about" class="about">
         <div class="about-container">
-            <img src="image.jpeg" alt="">
+            <img src="image.jpeg" alt="Personal Image">
 
 
             <div class="info-box">
@@ -53,13 +54,18 @@
                 </div>
 
                 <div class="btn-group">
-                    <div class="btn">Download CV</div>
-                    <div class="btn">Contact</div>
+                    <a href="Rudrra_Gohil_cv.pdf" class="btn" download>Download CV</a>
+                    <a href="#contact" class="btn">Contact</a>
                 </div>
 
                 <div class="socials">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://github.com/rudrrag" 
+                    target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i></a>
+
+                    <a href="https://www.linkedin.com/in/rudrra-gohil-b82b5b396" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i></a>
                 </div>
 
             </div>
@@ -99,33 +105,31 @@
         </div>
     </section>
 
+    <!--Project section-->
     <section id="projects" class="projects">
         <h2 class="project-title">Recent Projects</h2>
 
         <div class="projects-grid">
             <div class="project-card">
-                <img src="blockchain.jpg" alt="">
+                <img src="blockchain.jpg" alt="Blockchain">
                 <h3>Blockchain Project</h3>
                 <p>Built a blockchain from scratch that registers and validates transactions submitted from multiple sources.
                 Implemented proof-of-work to secure block creation and prevent tampering with the chain.
                 Applied cryptographic hashing to link blocks and preserve the integrity of the chain.
                 Developed a basic consensus mechanism so all participants agree on one valid chain.</p>
                 <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Github Repo</div>
+                    <a href="https://github.com/rudrrag/python_blockchain_project" target="_blank"
+                    rel="noopener norefferer" class="btn">GitHub Repo</a>
                 </div>
             </div>
 
             <div class="project-card">
-                <img src="neural_network.jpg" alt="">
+                <img src="neural_network.jpg" alt="Neural Network">
                 <h3>Neural Networks Project</h3>
                 <p>Building a neural network from first principles in Python without high-level machine learning frameworks.
                     Implementing forward propagation, backpropagation and gradient-based learning to understand how networks train.</p>
-
-
-                <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Github Repo</div>
+                <div>
+                    <p><b>Currently in Progress</b></p>
                 </div>
             </div>
         </div>
@@ -133,15 +137,19 @@
 
     <!--Contact section-->
     <section class="contact" id="contact">
-        <div class="input-box">
+        <form class="input-box" id="contact-form" action="https://formspree.io/f/xoevgvze" method="POST">
             <h2 class="contact-title">Contact Me</h2>
+
             <div class="input">
-                <input type="text" placeholder="example@email.com">
+                <input type="email" name="email" placeholder="example@email.com" required>
                 <i class="fa-solid fa-envelope"></i>
             </div>
 
-            <div class="btn">Submit</div>
-        </div>
+            <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <p class="form-status" id="form-status"></p>
+        </form>
     </section>
 
     <footer>
